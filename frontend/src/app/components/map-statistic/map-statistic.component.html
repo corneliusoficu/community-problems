@@ -1,0 +1,12 @@
+<div id="map-statistics-container" class="mt-4">
+    <h2>Statistici</h2>
+    <div id="statistics-list">
+        <div *ngFor="let statistic of mapStatistics">
+            <hr>
+            <div class="statistic-item d-flex flex-row align-items-center justify-content-between mb-2" >
+                <h5 class="statistic-text mb-0">{{statistic.name}}:</h5>
+                <h5 class="statistic-value mb-0">{{statistic.value}}</h5>
+            </div>
+        </div> 
+    </div>
+</div>

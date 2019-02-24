@@ -1,0 +1,14 @@
+#map-statistics-container{
+    color: white;
+    padding: 0 15px 15px 15px;
+}
+
+.statistic-item-margin {
+    border-left: 1px dashed #006494;
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+.statistic-name{
+    margin-bottom: 0;
+}
