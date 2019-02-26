@@ -1,0 +1,13 @@
+#add-problem-container{
+    background-color: #13293D;
+}
+
+#add-problem-column{
+    background-color: #F5F5F5;
+    margin: 15px 0;
+    padding: 30px;
+}
+
+.title-label {
+    font-size: 25px;
+}

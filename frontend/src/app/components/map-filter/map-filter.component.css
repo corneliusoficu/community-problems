@@ -2,3 +2,7 @@
     color: white;
     padding: 0 15px 15px 15px;
 }
+
+#severity-filter{
+    padding: 20px;
+}

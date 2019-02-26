@@ -9,6 +9,7 @@ import { MapStatisticComponent } from './components/map-statistic/map-statistic.
 import { MapFilterComponent } from './components/map-filter/map-filter.component';
 import { FormsModule } from '@angular/forms';
 import { NouisliderModule } from 'ng2-nouislider';
+import { AddProblemComponent } from './components/add-problem/add-problem.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NouisliderModule } from 'ng2-nouislider';
     HeaderComponent,
     MapComponent,
     MapStatisticComponent,
-    MapFilterComponent
+    MapFilterComponent,
+    AddProblemComponent
   ],
   imports: [
     BrowserModule,

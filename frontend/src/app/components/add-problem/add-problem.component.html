@@ -1,0 +1,71 @@
+<div class="row h-100 d-flex justify-content-center" id="add-problem-container">
+  <div class="col-md-5" id="add-problem-column">
+      <form id="add-problem-form">
+          <div class="form-group">
+            <label class="title-label" for="problemTitleInput">Titlul Problemei</label>
+            <input type="text" class="form-control form-control-lg" id="problemTitleInput">
+            <small id="titleHelpBlock" class="form-text text-muted">
+                Introduceti titlul problemei, ex: "Scurgere de gaze pe Str. Sf. Ilie".
+            </small>
+          </div>
+          <div class="form-group">
+            <label class="title-label" for="problemDescriptionTextArea">Descrierea problemei</label>
+            <textarea maxLength="{{maxTextLengthProblemDescription}}" name="problem-description" [(ngModel)]="problemDescription" class="form-control" id="problemDescriptionTextArea" rows="8"></textarea>
+            <div class="d-flex justify-content-between">
+                <small id="problemDescriptionTextArea" class="form-text text-muted">Descrieti cat mai pe larg problema intampinata.</small>
+                <small>{{maxTextLengthProblemDescription - problemDescription.length}}</small>
+            </div>
+          </div>
+          <label class="title-label" for="severityLevel">Nivelul de severitate al problemei</label>
+          <!-- <div id="severity-level-radio-group" class="mb-2">
+              <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="severity-level-radio-1" name="severity-level" class="custom-control-input">
+                  <label class="custom-control-label" for="severity-level-radio-1">Critic</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="severity-level-radio-2" name="severity-level" class="custom-control-input">
+                  <label class="custom-control-label" for="severity-level-radio-2">Major</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="severity-level-radio-3" name="severity-level" class="custom-control-input" checked="checked">
+                  <label class="custom-control-label" for="severity-level-radio-3">Mediu</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="severity-level-radio-4" name="severity-level" class="custom-control-input">
+                  <label class="custom-control-label" for="severity-level-radio-4">Minor</label>
+                </div>
+          </div> -->
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nivel</th>
+                <th scope="col">Semnificatie</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Critic</td>
+                <td>Probleme ce pot pune viata in pericol si asupra carora trebuie actionat imediat, ex: Scurgere de gaze, Risc de alunecare de teren</td>
+              </tr>
+              <tr>
+                  <th scope="row">2</th>
+                <td>Major</td>
+                <td>Probleme severe ce ne afacteaza zi de zi, ex: Poluare, Drum impracticabil</td>
+              </tr>
+              <tr class="table-success">
+                  <th scope="row">3</th>
+                <td>Mediu</td>
+                <td>Probleme comune, ex: Haite de caini vagabonzi, Deversari de deseuri pe marginea drumului</td>
+              </tr>
+              <tr>
+                  <th scope="row">4</th>
+                <td>Minor</td>
+                <td>Ex: Carosabil murdar</td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+  </div>
+</div>

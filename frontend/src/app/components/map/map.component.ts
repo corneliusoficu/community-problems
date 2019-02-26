@@ -1,6 +1,7 @@
 /// <reference types="@types/googlemaps" />
 import { Component, OnInit, ViewChild } from '@angular/core';
 import noUiSlider from 'nouislider'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-map',
@@ -11,7 +12,7 @@ export class MapComponent implements OnInit {
   @ViewChild('gmap') gmapElement: any;
   map: google.maps.Map;
 
-  constructor() { }
+  constructor(private _router:Router) { }
 
   ngOnInit() {
     this.initializeGoogleMaps()
@@ -24,5 +25,9 @@ export class MapComponent implements OnInit {
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
       this.map = new google.maps.Map(this.gmapElement.nativeElement, mapProperties);
+  }
+
+  goToAddProblem(){
+    this._router.navigate(['./problem/add'])
   }
 }
