@@ -1,6 +1,5 @@
 /// <reference types="@types/googlemaps" />
 import { Component, OnInit, ViewChild } from '@angular/core';
-import noUiSlider from 'nouislider'
 import { Router } from '@angular/router';
 
 @Component({

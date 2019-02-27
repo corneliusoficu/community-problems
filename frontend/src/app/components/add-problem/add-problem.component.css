@@ -11,3 +11,12 @@
 .title-label {
     font-size: 25px;
 }
+
+#problem-severity-table tr{
+    cursor: pointer;
+}
+
+#gmap {
+    width: 100%;
+    height: 500px;;
+}
